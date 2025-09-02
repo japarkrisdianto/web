@@ -459,8 +459,7 @@ footer {
     }
     
     header nav ul li a:hover {
-        background-color: #ff4444;
-        color: white;
+        color: #63b0fd;
     }
     
     header nav ul li a::after {
@@ -555,4 +554,5 @@ footer {
         padding: 15px;
         font-size: 0.9em;
     }
+
 }
