@@ -1,0 +1,558 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 80px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-section .logo {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #56e8f6, #9de7ff);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95em;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+
+header nav ul li a:hover {
+    color: #0ebfde;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #40b3ff, #3cb9b5);
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+main .content {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+
+.articles {
+    flex: 3;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#biografi {
+    text-align: justify;
+    padding: 50px;
+    line-height: 1.5;
+}
+
+#biografi a {
+    text-decoration: none;
+    color: rgb(0, 232, 249);
+}
+
+#biografi a:visited{
+    color: rgb(14, 115, 169);
+}
+
+#biografi a:hover {
+    text-decoration: underline;
+    color: rgb(58, 249, 0);
+}
+
+#prestasi {
+    padding: 50px;
+}
+
+.prestasi-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.prestasi-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prestasi-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.prestasi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.prestasi-card p {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+#prestasi h2 {
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.5;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+article h2 {
+    margin-bottom: 10px;
+    color: #63b0fd;
+}
+
+article ul {
+    list-style: disc inside;
+    margin-left: 5px;
+}
+
+article ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 2;
+}
+
+article ul li img {
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+#galeri {
+    padding: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    flex: 1 1 30%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+    max-width: 328px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+aside {
+    flex: 1;
+    min-width: 220px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}   
+
+aside:hover {
+    transform: translateY(-5px);
+}
+
+.player-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    color: #63b0fd;
+}
+
+.player-card {
+    padding: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player-card img {
+    border: 3px solid rgba(79, 173, 224, 0.578);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+}
+
+.player-card p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+    transition: all 0.3s ease;
+}
+
+.player-card p span {
+    font-weight: 600;
+    color: #666;
+}
+
+.player-card p:hover {
+    color: #63b0fd;
+}
+
+.clubs-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.clubs-container h3 {
+    margin-bottom: 15px;
+    color: #63b0fd;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.club-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border-top: 1px solid #eee;
+    justify-content: flex-start;
+}
+
+.club-item img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.club-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.club-info p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #444;
+    text-align: left;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .logo-section {
+        justify-content: center;
+    }
+    
+    header h1 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    
+    header nav ul {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    main .content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .articles {
+        min-width: auto;
+    }
+    
+    #prestasi {
+        padding: 30px 20px;
+    }
+    
+    .prestasi-cards {
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .prestasi-card {
+        width: 180px;
+    }
+    
+    #galeri {
+        padding: 30px 20px;
+    }
+    
+    .gallery img {
+        flex: 1 1 45%;
+        height: 180px;
+        max-width: none;
+    }
+    
+    aside {
+        min-width: auto;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .player-card {
+        padding: 15px;
+    }
+    
+    .player-card img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .club-item {
+        padding: 10px 15px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .logo-section .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1em;
+    }
+    
+    header h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    header nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    header nav ul li a {
+        font-size: 0.9em;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: #f8f9fa;
+        color: #666;
+    }
+    
+    header nav ul li a:hover {
+        background-color: #ff4444;
+        color: white;
+    }
+    
+    header nav ul li a::after {
+        display: none;
+    }
+    
+    main .content {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    #prestasi {
+        padding: 20px 15px;
+    }
+    
+    #galeri {
+        padding: 20px 15px;
+    }
+    
+    .prestasi-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .prestasi-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px;
+    }
+    
+    .gallery {
+        gap: 10px;
+    }
+    
+    .gallery img {
+        flex: 1 1 100%;
+        height: 200px;
+        width: 100%;
+    }
+    
+    aside {
+        padding: 15px;
+    }
+    
+    aside h3 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    
+    .player-card {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .player-card img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+    
+    .player-card p {
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+    
+    .clubs-container {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    
+    .clubs-container h3 {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+    }
+    
+    .club-item {
+        padding: 8px 12px;
+        gap: 10px;
+    }
+    
+    .club-item img {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .club-info p {
+        font-size: 0.85em;
+    }
+    
+    footer {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+}
